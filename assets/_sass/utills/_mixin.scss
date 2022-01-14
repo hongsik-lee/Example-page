@@ -1,0 +1,12 @@
+// calculation px to rem
+@mixin fontSize($size){
+    font-size: $size;
+    font-size:calculateRem($size);
+}
+
+// flex
+@mixin flex($justify-content, $align-items){
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}

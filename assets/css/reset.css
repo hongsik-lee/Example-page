@@ -1,12 +1,5 @@
 @charset "UTF-8";
 
-/* Webfont setup */
-@font-face {
-font-family: '웹폰트-네임';
-    font-style:normal;
-    font-weight:normal;
-    src:local('웹폰트-네임'), url('/assets/font/'웹폰트-네임'.woff') format('woff'); /* Pretty Modern Browsers */
-}
 
 /* CSS Document */
 html, body, div, span, object, iframe,
@@ -35,9 +28,9 @@ em, address, i{font-style:normal}
 a{text-decoration:none}
 
 /* Root Font Style */
-:root{
-    /* 기본(대표) 폰트 스타일 정의 */
-}
+ /* :root{
+        기본(대표) 폰트 스타일 정의
+}  */
 
 /* Hidden Text */
 .blind{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip-path:polygon(0 0, 0 0, 0 0);}

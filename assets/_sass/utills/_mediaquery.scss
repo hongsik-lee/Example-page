@@ -1,8 +1,8 @@
 @include mobile {
-   .container {
+    .container {
       padding:0 20px
-   }
-   header {
+    }
+    header {
       &.main-header {
           height:100px;
           &.drop {
@@ -15,11 +15,10 @@
             @include flex (center, center);
         }
       }
-  }
-  
-  section {
+    }
+    section {
       h2 {
-          font-size:26px;
+          font-size:rem-calc(26px);
           &::after {
               position:absolute;
               bottom:-10px;
@@ -31,15 +30,14 @@
           }
       }
       &.banner {
-          height:100vh;
-          .container {
-              top:50%;
-          }
-          h1 {
-              line-height:38px;
-              font-size:24px;
-              font-weight:300;
-          }
+        .container {
+            > div {
+                h1 {
+                    line-height:40px;
+                    font-size:rem-calc(24px);
+                }
+            }
+        }
       }
       &.services {
           padding:40px 0;
@@ -110,7 +108,7 @@
           padding:40px 0;          
           p {
               margin-top: 35px;
-              font-size: 20px;
+              font-size: rem-calc(20px);
               line-height:30px;
           }
       }
@@ -140,7 +138,7 @@
           padding:40px 0;
           h3 {
               margin:30px 0 25px;
-              font-size:20px;
+              font-size:rem-calc(20px);
               font-weight:100;
               line-height:30px;
           }
@@ -163,13 +161,17 @@
               label {
                   margin-bottom:8px;
               }
-
+              a {
+                width: 100%;
+                margin-bottom:20px;
+            }
           }
       }
-  }
+    }
 }
 
 @include tablet {
+
    .container {
       padding:0 20px
    }
@@ -179,62 +181,18 @@
           &.drop {
               height:90px;
           }
-          .container {
-              @include flex (space-between, center);
-              height: 100%;
-          }
-          nav ul {
-              @include flex (space-between, center);
-              // padding:57px 0;
-  
-              li {
-                  width: 80px;
-                  margin-left: 20px;
-                  padding:1% 0;
-                  text-align: center;
-                  border: 2px solid rgba(0,0,0,0);
-                  a {
-                      color:$color4;
-                      font-size:14px;
-                      font-weight:600;
-                      transition:.3s;
-                  }
-  
-                  &.active {
-                      border:2px solid $color1;
-                      a {
-                          color:$color1;
-                      }
-                  }
-                  &:hover {
-                      a {
-                          
-                          color:$color1;
-                      }
-                      
-                  }
-              }
-          }
-      }
-  }
-  
+        }
+    }
   section {
-      h2 {
-          position:relative;
-          // padding-top:80px;
-          font-size:30px;
-          // color: #fff;
-          font-weight:200;
-          text-transform: uppercase;
-          &::after {
-              position:absolute;
-              bottom:-10px;
-              left:0;
-              width:45px;
-              height:2px;
-              content: '';
-              background:#000;
-          }
+      &.banner {
+        .container {
+            > div {
+                h1 {
+                    line-height:45px;
+                    font-size:rem-calc(28px);
+                }
+            }
+        }
       }
 
       &.portfolio {
@@ -251,13 +209,14 @@
               @include flex (center, center);
               flex-wrap: wrap;
               li {
-                  margin-right:20px;
-                  &:nth-child(3n) {
-                      margin-right:0;
-                  }
-                  &:nth-child(4n) {
-                     margin-right:20px;
-                 }
+                width:calc(33.3333% - 20px);
+                margin-right:20px;
+                &:nth-child(3n) {
+                    margin-right:0;
+                }
+                &:nth-child(4n) {
+                    margin-right:20px;
+                }
               }
           }
       }
@@ -299,7 +258,10 @@
             input[type="text"]{
                max-width: 100%;
             }
-
+            a {
+                width: 100%;
+                margin-bottom:20px;
+            }
         }
       }
   }

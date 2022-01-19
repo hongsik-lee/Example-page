@@ -12,27 +12,19 @@
 }
 
 // font 설정 
-@mixin font-face($style-name, $file, $family: '') {
-    $filepath: '../../assets/webfonts/' + $file;
+// @mixin font-face($style-name, $file, $family: '') {
+//     $filepath: '../../assets/webfonts/' + $file;
   
-    // @font-face {
-    //   font-family: '#{$style-name}';
-    //   src: url($filepath + '.eot');
-    //   src: url($filepath + '.eot?#iefix') format('embedded-opentype'), url($filepath + '.woff')
-    //       format('woff'), url($filepath + '.ttf') format('truetype'), url($filepath + '.svg#' + $style-name + '')
-    //       format('svg');
-    // }
-
-    @font-face {
-      font-family: '#{$style-name}';
-      src: url($filepath + '.eot');
-      src: url($filepath + '.eot?#iefix') format('embedded-opentype'), url($filepath + '.ttf') format('truetype'), url($filepath + '.svg#' + $style-name + '') format('svg');
-    }
-}
-    @include font-face('Segoe UI', 'Segoe UI','serif');
-    @include font-face('Segoe UI-italic', 'Segoe UI Italic','serif');
-    @include font-face('Segoe UI-bold', 'Segoe UI Bold','serif');
-    @include font-face('Segoe UI-boldI', 'Segoe UI Bold Italic','serif');
+//   @font-face {
+//     font-family: '"#{$style-name}"';
+//     src: url("$filepath + '.eot'");
+//     src: url($filepath + '.eot?#iefix') format('embedded-opentype'), url($filepath + '.ttf') format('truetype'), url($filepath + '.svg#' + $style-name + '') format('svg');
+//   }
+// }
+//   @include font-face('Segoe UI', 'Segoe UI','serif');
+//   @include font-face('Segoe UI-italic', 'Segoe UI Italic','serif');
+//   @include font-face('Segoe UI-bold', 'Segoe UI Bold','serif');
+//   @include font-face('Segoe UI-boldI', 'Segoe UI Bold Italic','serif');
 
 
 // media query 

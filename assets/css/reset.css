@@ -32,6 +32,32 @@ a{text-decoration:none}
         기본(대표) 폰트 스타일 정의
 }  */
 
+/* 기본(대표) 폰트 스타일 정의 */
+@font-face {
+  font-family: '"Segoe UI"';
+  src: url("$filepath + '.eot'");
+  src: url("../../assets/webfonts/Segoe UI.eot?#iefix") format("embedded-opentype"), url("../../assets/webfonts/Segoe UI.ttf") format("truetype"), url("../../assets/webfonts/Segoe UI.svg#Segoe UI") format("svg");
+}
+  
+@font-face {
+  font-family: '"Segoe UI-italic"';
+  src: url("$filepath + '.eot'");
+   src: url("../../assets/webfonts/Segoe UI Italic.eot?#iefix") format("embedded-opentype"), url("../../assets/webfonts/Segoe UI Italic.ttf") format("truetype"), url("../../assets/webfonts/Segoe UI Italic.svg#Segoe UI-italic") format("svg");
+}
+  
+@font-face {
+  font-family: '"Segoe UI-bold"';
+  src: url("$filepath + '.eot'");
+  src: url("../../assets/webfonts/Segoe UI Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/webfonts/Segoe UI Bold.ttf") format("truetype"), url("../../assets/webfonts/Segoe UI Bold.svg#Segoe UI-bold") format("svg");
+}
+  
+@font-face {
+  font-family: '"Segoe UI-boldI"';
+  src: url("$filepath + '.eot'");
+  src: url("../../assets/webfonts/Segoe UI Bold Italic.eot?#iefix") format("embedded-opentype"), url("../../assets/webfonts/Segoe UI Bold Italic.ttf") format("truetype"), url("../../assets/webfonts/Segoe UI Bold Italic.svg#Segoe UI-boldI") format("svg");
+  }
+
+  
 /* Hidden Text */
 .blind{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip-path:polygon(0 0, 0 0, 0 0);}
 

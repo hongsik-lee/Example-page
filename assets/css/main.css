@@ -1,27 +1,3 @@
-@font-face {
-  font-family: "Segoe UI";
-  src: url("../../assets/webfonts/Segoe UI.eot");
-  src: url("../../assets/webfonts/Segoe UI.eot?#iefix") format("embedded-opentype"), url("../../assets/webfonts/Segoe UI.ttf") format("truetype"), url("../../assets/webfonts/Segoe UI.svg#Segoe UI") format("svg");
-}
-
-@font-face {
-  font-family: "Segoe UI-italic";
-  src: url("../../assets/webfonts/Segoe UI Italic.eot");
-  src: url("../../assets/webfonts/Segoe UI Italic.eot?#iefix") format("embedded-opentype"), url("../../assets/webfonts/Segoe UI Italic.ttf") format("truetype"), url("../../assets/webfonts/Segoe UI Italic.svg#Segoe UI-italic") format("svg");
-}
-
-@font-face {
-  font-family: "Segoe UI-bold";
-  src: url("../../assets/webfonts/Segoe UI Bold.eot");
-  src: url("../../assets/webfonts/Segoe UI Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/webfonts/Segoe UI Bold.ttf") format("truetype"), url("../../assets/webfonts/Segoe UI Bold.svg#Segoe UI-bold") format("svg");
-}
-
-@font-face {
-  font-family: "Segoe UI-boldI";
-  src: url("../../assets/webfonts/Segoe UI Bold Italic.eot");
-  src: url("../../assets/webfonts/Segoe UI Bold Italic.eot?#iefix") format("embedded-opentype"), url("../../assets/webfonts/Segoe UI Bold Italic.ttf") format("truetype"), url("../../assets/webfonts/Segoe UI Bold Italic.svg#Segoe UI-boldI") format("svg");
-}
-
 @-webkit-keyframes dropHeader {
   0% {
     top: -5rem;
@@ -109,7 +85,7 @@ header.main-header nav ul li {
 
 header.main-header nav ul li a {
   color: #fff;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   -webkit-transition: .3s;
   transition: .3s;
@@ -129,7 +105,7 @@ header.main-header nav ul li:hover a {
 
 section h2 {
   position: relative;
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 200;
   text-transform: uppercase;
 }
@@ -152,22 +128,26 @@ section.banner {
 }
 
 section.banner .container {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
-  left: 50%;
-  right: 50%;
-  bottom: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   text-align: center;
 }
 
-section.banner h1 {
+section.banner .container > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+section.banner .container > div h1 {
   display: inline;
   line-height: 75px;
-  font-size: 42px;
-  font-weight: 300;
+  font-size: 2.625rem;
+  font-weight: lighter;
   text-transform: uppercase;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.3);
@@ -205,13 +185,13 @@ section.services ul li:last-child {
 section.services ul li h3 {
   margin: 20px 0;
   color: #fff;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 400;
   text-transform: uppercase;
 }
 
 section.services ul li p {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #fff;
 }
 
@@ -248,7 +228,7 @@ section.portfolio .content-header .menu {
 section.portfolio .content-header .menu li {
   padding: 8px 15px;
   color: #515f67;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   border: 2px solid rgba(0, 0, 0, 0);
   -webkit-transition: .3s;
@@ -299,7 +279,7 @@ section.portfolio .contents li::before {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
   content: "+";
-  font-size: 72px;
+  font-size: 4.5rem;
   text-align: center;
   line-height: 270px;
   color: #fff;
@@ -315,6 +295,7 @@ section.portfolio .contents li:hover::before {
 
 section.portfolio .contents li img {
   display: block;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -345,9 +326,6 @@ section.video .container {
 }
 
 section.video .container div {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   width: 50%;
   max-width: 570px;
 }
@@ -355,7 +333,7 @@ section.video .container div {
 section.video .container div p {
   margin: 30px 0;
   max-width: 470px;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: #fff;
 }
 
@@ -377,7 +355,7 @@ section.video .container div a {
   line-height: 45px;
   font-family: Segoe UI-bold;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
   -webkit-transition: .3s;
   transition: .3s;
@@ -420,7 +398,7 @@ section.twitter .content-header h2::after {
 
 section.twitter p {
   margin-top: 45px;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 100;
   line-height: 50px;
   color: #fff;
@@ -467,7 +445,7 @@ section.social .container div {
 }
 
 section.social .container p {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 24px;
   color: #fff;
   margin-bottom: 35px;
@@ -508,13 +486,13 @@ section.quote .content-header {
 
 section.quote h3 {
   margin: 50px 0 35px;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 100;
   line-height: 50px;
 }
 
 section.quote span {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   color: #4bcaff;
 }
@@ -551,7 +529,7 @@ section.contact fieldset {
 section.contact fieldset p {
   margin-bottom: 40px;
   width: 50%;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 24px;
   color: #fff;
 }
@@ -563,7 +541,7 @@ section.contact fieldset p:last-of-type {
 section.contact fieldset label {
   display: block;
   margin-bottom: 10px;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   color: #fff;
 }
@@ -594,6 +572,47 @@ section.contact fieldset textarea {
           box-sizing: border-box;
 }
 
+section.contact fieldset a {
+  display: inline-block;
+  width: 370px;
+  height: 60px;
+  background-color: #4bcaff;
+  color: #fff;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 60px;
+  font-weight: bold;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+section.contact fieldset a:hover {
+  opacity: .8;
+}
+
+#skip {
+  position: relative;
+}
+
+#skip a {
+  background: #333;
+  height: 30px;
+  left: 50%;
+  padding: 8px;
+  position: absolute;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+#skip a:active, #skip a:focus {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .container {
     padding: 0 20px;
@@ -619,7 +638,7 @@ section.contact fieldset textarea {
             align-items: center;
   }
   section h2 {
-    font-size: 26px;
+    font-size: 1.625rem;
   }
   section h2::after {
     position: absolute;
@@ -630,16 +649,9 @@ section.contact fieldset textarea {
     content: '';
     background: #000;
   }
-  section.banner {
-    height: 100vh;
-  }
-  section.banner .container {
-    top: 50%;
-  }
-  section.banner h1 {
-    line-height: 38px;
-    font-size: 24px;
-    font-weight: 300;
+  section.banner .container > div h1 {
+    line-height: 40px;
+    font-size: 1.5rem;
   }
   section.services {
     padding: 40px 0;
@@ -746,7 +758,7 @@ section.contact fieldset textarea {
   }
   section.twitter p {
     margin-top: 35px;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 30px;
   }
   section.social {
@@ -785,7 +797,7 @@ section.contact fieldset textarea {
   }
   section.quote h3 {
     margin: 30px 0 25px;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 100;
     line-height: 30px;
   }
@@ -819,6 +831,10 @@ section.contact fieldset textarea {
   section.contact fieldset label {
     margin-bottom: 8px;
   }
+  section.contact fieldset a {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -831,66 +847,9 @@ section.contact fieldset textarea {
   header.main-header.drop {
     height: 90px;
   }
-  header.main-header .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 100%;
-  }
-  header.main-header nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  header.main-header nav ul li {
-    width: 80px;
-    margin-left: 20px;
-    padding: 1% 0;
-    text-align: center;
-    border: 2px solid rgba(0, 0, 0, 0);
-  }
-  header.main-header nav ul li a {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 600;
-    -webkit-transition: .3s;
-    transition: .3s;
-  }
-  header.main-header nav ul li.active {
-    border: 2px solid #4bcaff;
-  }
-  header.main-header nav ul li.active a {
-    color: #4bcaff;
-  }
-  header.main-header nav ul li:hover a {
-    color: #4bcaff;
-  }
-  section h2 {
-    position: relative;
-    font-size: 30px;
-    font-weight: 200;
-    text-transform: uppercase;
-  }
-  section h2::after {
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 45px;
-    height: 2px;
-    content: '';
-    background: #000;
+  section.banner .container > div h1 {
+    line-height: 45px;
+    font-size: 1.75rem;
   }
   section.portfolio {
     padding-top: 80px;
@@ -913,6 +872,7 @@ section.contact fieldset textarea {
         flex-wrap: wrap;
   }
   section.portfolio .contents li {
+    width: calc(33.3333% - 20px);
     margin-right: 20px;
   }
   section.portfolio .contents li:nth-child(3n) {
@@ -948,5 +908,9 @@ section.contact fieldset textarea {
   }
   section.contact fieldset input[type="text"] {
     max-width: 100%;
+  }
+  section.contact fieldset a {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }

@@ -7,18 +7,26 @@
     <title>BLUEASY</title>
 
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.min.css">
     
 </head>
 <body>
 <div id="wrap">
+    <!-- skip navigation  -->
+    <span id="skip_nav">
+        <a href="#cont-menu">전체메뉴바로가기</a>
+        <a href="#cont-cont">본문바로가기</a>
+    </span>
+    <!-- // skip navigation -->
+    
+    <!-- 최상위 메뉴 -->
     <header class="main-header">
         <div class="container">
             <a href="index.html">
                 <img src="assets/images/logo.png" alt="logo image">
                 <span class="blind">BLUEASY</span>
             </a>
-            <nav>
+            <nav id="cont-menu">
                 <ul>
                     <li class="active"><a href="#">HOME</a></li>
                     <li><a href="#">SERVICES</a></li>
@@ -29,9 +37,12 @@
             </nav>
         </div>
     </header>
-    <section class="banner">
+    <!-- // 최상위 메뉴 -->
+    <section class="banner" id="cont-cont">
         <div class="container">
-            <h1>&quotI’m looking for the unexpected.<br />I’m looking for things I’ve never seen before.&quot</h1>
+            <div>
+                <h1>&quot;I’m looking for the unexpected.<br />I’m looking for things I’ve never seen before.&quot;</h1>
+            </div>
         </div>
     </section>
     <section class="services">
@@ -150,7 +161,7 @@
                     <legend class="blind">contact form</legend>
                     <p>
                         <label for="name">FULL NAME</label>
-                        <input type="text" id="name" />
+                        <input type="text" name="name" id="name" value="name" title="name"/>
                     </p>
                     <p>
                         Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar. Sweet lollipop halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar gingerbread lollipop tart. Jujubes bear claw donut chupa chups.
@@ -158,7 +169,7 @@
                     </p>
                     <P>
                         <label for="mail">EMAIL</label>
-                        <input type="text" id="mail">
+                        <input type="text" name="mail" id="mail" value="mail" title="name" />
                     </P>
                     <p>Linda Newman<br />
                         W325 State Road 123<br />

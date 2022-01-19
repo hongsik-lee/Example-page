@@ -1,0 +1,16 @@
+// skip navigation
+#skip {
+    position:relative;
+    a {
+        background: #333;
+        height: 30px;
+        left: 50%;
+        padding: 8px;
+        position: absolute;
+        transform: translateY(-100%);
+        transition: transform 0.3s;
+
+        &:active,
+        &:focus {transform: translateY(0%);}
+    }
+}

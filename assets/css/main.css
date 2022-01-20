@@ -590,6 +590,65 @@ section.contact fieldset a:hover {
   opacity: .8;
 }
 
+footer {
+  padding: 75px 0;
+  background-color: #353f46;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul li {
+  position: relative;
+  margin: 0 11px;
+  font-size: 0.75rem;
+  color: #515f67;
+  cursor: pointer;
+}
+
+footer ul li::after {
+  position: absolute;
+  right: -11px;
+  width: 1px;
+  height: 100%;
+  background-color: #515f67;
+  content: '';
+}
+
+footer ul li:first-child {
+  margin-left: 0;
+}
+
+footer ul li:last-child::after {
+  display: none;
+}
+
+footer span {
+  font-size: 0.75rem;
+  color: #515f67;
+}
+
 #skip_nav a {
   background: #333;
   color: #fff;

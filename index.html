@@ -27,12 +27,12 @@
                 <span class="blind">BLUEASY</span>
             </a>
             <nav id="cont-menu">
-                <ul>
-                    <li class="active"><a href="#">HOME</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">FEATURES</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                <ul role="menu">
+                    <li class="active" role="none"><a href="#" role="menuitem">HOME</a></li>
+                    <li role="none"><a href="#" role="menuitem">SERVICES</a></li>
+                    <li role="none"><a href="#" role="menuitem">FEATURES</a></li>
+                    <li role="none"><a href="#" role="menuitem">PORTFOLIO</a></li>
+                    <li role="none"><a href="#" role="menuitem">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -76,23 +76,23 @@
         <div class="container">
             <header class="content-header">
                 <h2>portfolio</h2>
-                <ul class="menu" role="navigation" aria-label="tab menu">
-                    <li class="active">all</li>
-                    <li>panoramas</li>
-                    <li>portraits</li>
-                    <li>macro</li>
-                    <li>journal</li>
+                <ul class="menu" role="navigation" role="menu" aria-label="tab menu">
+                    <li class="active" role="menuitem">all</li>
+                    <li role="menuitem">panoramas</li>
+                    <li role="menuitem">portraits</li>
+                    <li role="menuitem">macro</li>
+                    <li role="menuitem">journal</li>
                 </ul>
             </header>
             <ul class="contents" role="img" aria-label="The pictures of works for portfolio">
-                <li><img src="assets/images/thumb_main1.png" alt="portfolio images"></li>
-                <li><img src="assets/images/thumb_main2.png" alt="portfolio images"></li>
-                <li><img src="assets/images/thumb_main3.png" alt="portfolio images"></li>
-                <li><img src="assets/images/thumb_main4.png" alt="portfolio images"></li>
-                <li><img src="assets/images/thumb_main5.png" alt="portfolio images"></li>
-                <li><img src="assets/images/thumb_main6.png" alt="portfolio images"></li>
-                <li><img src="assets/images/thumb_main7.png" alt="portfolio images"></li>
-                <li><img src="assets/images/thumb_main8.png" alt="portfolio images"></li>
+                <li><img src="assets/images/thumb_main1.png" alt="portfolio images1"></li>
+                <li><img src="assets/images/thumb_main2.png" alt="portfolio images2"></li>
+                <li><img src="assets/images/thumb_main3.png" alt="portfolio images3"></li>
+                <li><img src="assets/images/thumb_main4.png" alt="portfolio images4"></li>
+                <li><img src="assets/images/thumb_main5.png" alt="portfolio images5"></li>
+                <li><img src="assets/images/thumb_main6.png" alt="portfolio images6"></li>
+                <li><img src="assets/images/thumb_main7.png" alt="portfolio images7"></li>
+                <li><img src="assets/images/thumb_main8.png" alt="portfolio images8"></li>
             </ul>
         </div>
     </section>
@@ -171,7 +171,6 @@
                     </p>
                     <p>
                         Jujubes bear claw croissant wafer sweet lemon drops brownie chocolate bar. Sweet lollipop halvah tootsie roll cake fruitcake. Chocolate cake chocolate bar gingerbread lollipop tart. Jujubes bear claw donut chupa chups.
-
                     </p>
                     <P>
                         <label for="mail">EMAIL</label>
@@ -192,7 +191,17 @@
         </form>
         
     </section>
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <ul role="menu" aria-label="footer navigation">
+                <li role="menuitem">HOME</li>
+                <li role="menuitem">SERVICES</li>
+                <li role="menuitem">PORTFOLIO</li>
+                <li role="menuitem">CONTACT</li>
+            </ul>
+            <span>2022©</span>
+        </div>
+    </footer>
 </div>
 <script src="assets/js/main.js"></script>
 </body>

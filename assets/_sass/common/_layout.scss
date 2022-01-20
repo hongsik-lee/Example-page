@@ -418,3 +418,41 @@ section {
         }
     }
 }
+
+footer {
+    padding:75px 0;
+    background-color:$color3;
+    .container {
+        @include flex (space-between, center);
+    }
+    ul {
+        @include flex (space-between, center);
+        li {
+            position:relative;
+            margin:0 11px;
+            font-size:rem-calc(12px);
+            color:$color2;
+            cursor: pointer;
+            &::after {
+                position:absolute;
+                right:-11px;
+                width:1px;
+                height:100%;
+                background-color:$color2;
+                content:'';
+            }
+            &:first-child {
+                margin-left:0;
+            }
+            &:last-child {
+                &::after {
+                    display:none
+                }
+            }
+        }
+    }
+    span {
+        font-size:rem-calc(12px);
+        color:$color2;
+    }
+}

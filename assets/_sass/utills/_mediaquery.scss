@@ -171,11 +171,10 @@
 }
 
 @include tablet {
-
    .container {
       padding:0 20px
    }
-   header {
+    header {
       &.main-header {
           height:120px;
           &.drop {
@@ -183,7 +182,7 @@
           }
         }
     }
-  section {
+    section {
       &.banner {
         .container {
             > div {
@@ -264,5 +263,5 @@
             }
         }
       }
-  }
+    }
 }

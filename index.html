@@ -23,7 +23,7 @@
     <header class="main-header">
         <div class="container">
             <a href="index.html">
-                <img src="assets/images/logo.png" alt="logo image">
+                <img src="assets/images/logo.png" alt="logo image BLUEASY">
                 <span class="blind">BLUEASY</span>
             </a>
             <nav id="cont-menu">
@@ -45,26 +45,26 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <section class="services" aria-label="services">
         <div class="container">
             <h2>services</h2>
-            <ul>
-                <li>
+            <ul role="list">
+                <li role="listitem">
                     <img src="assets/images/icon_coffee.png" alt="coffee icon">
                     <h3>coffee</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, vel! Odit cumque ducimus laboriosam placeat aut beatae eaque, quam fuga delectus ipsam ipsum natus recusandae dolore consectetur, laudantium provident doloribus.</p>
                 </li>
-                <li>
+                <li role="listitem">
                     <img src="assets/images/icon_insta.png" alt="instant icon">
                     <h3>instant</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut fugit commodi consequatur eos praesentium, error, doloremque voluptatem id provident et magni optio libero, voluptatum corporis aspernatur suscipit dignissimos tenetur sunt.</p>
                 </li>
-                <li>
+                <li role="listitem">
                     <img src="assets/images/icon_camera.png" alt="serious icon">
                     <h3>serious</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut fugit commodi consequatur eos praesentium, error, doloremque voluptatem id provident et magni optio libero, voluptatum corporis aspernatur suscipit dignissimos tenetur sunt.</p>
                 </li>
-                <li>
+                <li role="listitem">
                     <img src="assets/images/icon_frame.png" alt="frame icon">
                     <h3>frame</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut fugit commodi consequatur eos praesentium, error, doloremque voluptatem id provident et magni optio libero, voluptatum corporis aspernatur suscipit dignissimos tenetur sunt.</p>
@@ -72,11 +72,11 @@
             </ul>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" aria-label="portfolio">
         <div class="container">
             <header class="content-header">
                 <h2>portfolio</h2>
-                <ul class="menu">
+                <ul class="menu" role="navigation" aria-label="tab menu">
                     <li class="active">all</li>
                     <li>panoramas</li>
                     <li>portraits</li>
@@ -84,7 +84,7 @@
                     <li>journal</li>
                 </ul>
             </header>
-            <ul class="contents">
+            <ul class="contents" role="img" aria-label="The pictures of works for portfolio">
                 <li><img src="assets/images/thumb_main1.png" alt="portfolio images"></li>
                 <li><img src="assets/images/thumb_main2.png" alt="portfolio images"></li>
                 <li><img src="assets/images/thumb_main3.png" alt="portfolio images"></li>
@@ -96,13 +96,19 @@
             </ul>
         </div>
     </section>
-    <section class="video">
+    <section class="video" aria-lebel="Just default Section">
         <div class="container">
             <div>
                 <h2>Just default Section</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt itaque expedita odio esse quisquam. Cumque optio hic, illum, omnis similique magnam delectus mollitia natus beatae, atque nisi. Fugiat, doloremque libero?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, deleniti dolorum facere hic reiciendis ipsa quos alias dolor quaerat, laborum dolores excepturi ullam. Dicta id veritatis optio maiores nam eligendi?</p>
-                <a href="#">visit me</a>
+                <a href="https://github.com/hongsik-lee/Example-page.git/"
+                    tabindex="0"
+                    role="link"
+                    onkeydown="goToLink(event, 'https://github.com/hongsik-lee/Example-page.git/')"
+                    >
+                    visit me
+                </a>
             </div>
             <div>
                 <video controls muted>
@@ -113,7 +119,7 @@
             </div>
         </div>
     </section> 
-    <section class="twitter">
+    <section class="twitter" aria-label="twitter">
         <div class="container">
             <header class="content-header">
                 <h2>twitter</h2>
@@ -125,7 +131,7 @@
             </p>
         </div>
     </section>
-    <section class="social">
+    <section class="social" aria-label="Who is john doe?">
         <div class="container">
             <h2>Who is john doe?</h2>
             <div>
@@ -143,7 +149,7 @@
             </div>
         </div>
     </section>
-    <section class="quote">
+    <section class="quote" aria-label="twitter">
         <div class="container">
             <header class="content-header">
                 <h2>twitter</h2>
@@ -153,7 +159,7 @@
             <span>-Walter White</span>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact" aria-label="contact">
         <form action="#">
             <div class="container">
                 <h2>contact</h2>
@@ -180,7 +186,7 @@
                         <label for="message">MESSAGE</label>
                         <textarea name="message" id="message"></textarea>
                     </p>
-                    <a href="#">MESSAGE</a>
+                    <a href="#" role="button">MESSAGE</a>
                 </fieldset>
             </div>
         </form>

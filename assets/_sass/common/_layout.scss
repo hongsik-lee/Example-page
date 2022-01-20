@@ -12,9 +12,9 @@
 }
   
 .container {
-    margin:0 auto;
     width:100%;
     max-width:1170px;
+    margin:0 auto;
     box-sizing: border-box;
     font-family:Segoe UI;
 }
@@ -24,8 +24,8 @@ header {
         position:absolute;
         top:0;
         width:100%;
-        background-color:rgba(0,0,0,.3);
         height:150px;
+        background-color:rgba(0,0,0,.3);
         transition:.3s;
         z-index: 10;
 
@@ -45,15 +45,14 @@ header {
                 width: 80px;
                 margin-left:20px;
                 padding:1% 0;
-                text-align: center;
                 border: 2px solid rgba(0,0,0,0);
+                text-align: center;
                 a {
                     color:$color4;
                     font-size:rem-calc(14px);
                     font-weight:600;
                     transition:.3s;
                 }
-
                 &.active {
                     border:2px solid $color1;
                     a {
@@ -62,7 +61,6 @@ header {
                 }
                 &:hover {
                     a {
-                        
                         color:$color1;
                     }
                     
@@ -170,7 +168,6 @@ section {
                         color:$color1;
                     }
                     &:hover {
-                        
                         color:$color1;
                     }
                 }
@@ -185,7 +182,6 @@ section {
                 margin-right:30px;
                 margin-bottom:30px;
                 cursor: pointer;
-
                 &:nth-child(4n) {
                     margin-right:0;
                 }
@@ -193,11 +189,11 @@ section {
                     position:absolute;
                     top:0;left:0;right:0;bottom:0;
                     background-color:rgba(0,0,0,.6);
-                    content:"+";
                     font-size:rem-calc(72px);
                     text-align: center;
                     line-height:270px;
                     color:$color4;
+                    content:"+";
                     cursor: pointer;
                     opacity:0;
                     transition:.3s;
@@ -310,10 +306,10 @@ section {
                 max-width:570px;
             }
             p {
+                margin-bottom:35px;
                 font-size:rem-calc(14px);
                 line-height:24px;
                 color:$color4;
-                margin-bottom:35px;
             }
             .link_content {
                 a {
@@ -385,8 +381,8 @@ section {
             input[type="text"] {
                 width: 100%;
                 max-width:470px;
-                border:2px solid $color4;
                 padding:2%;
+                border:2px solid $color4;
                 background:none;
                 color:$color4;
                 font-size: inherit;

@@ -1,16 +1,18 @@
 // skip navigation
-#skip {
-    position:relative;
+#skip_nav {
+
     a {
         background: #333;
+        color:$color4;
         height: 30px;
-        left: 50%;
+        left: 0;
         padding: 8px;
         position: absolute;
         transform: translateY(-100%);
         transition: transform 0.3s;
 
-        &:active,
-        &:focus {transform: translateY(0%);}
+        &:focus {
+            transform: translateY(0%);
+        }
     }
 }
